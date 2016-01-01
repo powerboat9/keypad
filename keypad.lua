@@ -52,7 +52,7 @@ while true do
 end
 
 monitor.clear()
-writeRow(2, "CLOSE")
+writeRow(2, "<o>")
 
 rs.setOutput("bottom", true)
 os.pullEvent("monitor_touch")
