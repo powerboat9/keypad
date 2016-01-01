@@ -1,6 +1,6 @@
 local monitor = assert(peripheral.find("monitor"), "Could Not Find Keypad")
 
-monitor.setTextScale(1)
+monitor.setTextScale(1.5)
 monitor.clear()
 
 local x, y = monitor.getSize()
