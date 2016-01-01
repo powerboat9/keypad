@@ -18,11 +18,14 @@ function writeRow(layer, txt)
 end
 
 function redraw()
+    print("Redrawing keypad...")
     monitor.clear()
     writeRow(1, "123")
     writeRow(2, "456")
     writeRow(3, "789")
 end
+
+redraw()
 
 local combo = {1, 2, 3, 4} --The first nil value is the end of the array
 local comboPos = 1
