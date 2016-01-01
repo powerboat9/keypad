@@ -47,4 +47,13 @@ while true do
     end
 end
 
-rs.
+monitor.clear()
+writeRow(2, "CLOSE")
+
+rs.setOutput("bottom", true)
+os.pullEvent("monitor_touch")
+rs.setOutput("bottom", false)
+monitor.clear()
+writeRow(2, ":)")
+sleep(1)
+os.reboot()
