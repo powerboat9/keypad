@@ -1,7 +1,8 @@
+local monitor = assert(peripheral.find("monitor"), "Could Not Find Keypad")
+
 monitor.setTextScale(1)
 monitor.clear()
 
-local monitor = assert(peripheral.find("monitor"), "Could Not Find Keypad")
 local x, y = monitor.getSize()
 if (floor(x / 2) * 2) == x then
     x = x - 1
