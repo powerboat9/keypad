@@ -4,10 +4,10 @@ monitor.setTextScale(1)
 monitor.clear()
 
 local x, y = monitor.getSize()
-if (floor(x / 2) * 2) == x then
+if (math.floor(x / 2) * 2) == x then
     x = x - 1
 end
-if (floor(y / 2) * 2) == y then
+if (math.floor(y / 2) * 2) == y then
     y = y - 1
 end
 local xBuff, yBuff = ((x - 3) / 2), ((y - 3) / 2)
