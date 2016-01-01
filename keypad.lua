@@ -30,7 +30,7 @@ redraw()
 local combo = {1, 2, 3, 4} --The first nil value is the end of the array
 local comboPos = 1
 while true do
-    event, clickX, clickY = os.pullEvent("monitor_touch")
+    event, side, clickX, clickY = os.pullEvent("monitor_touch")
     local keyX, keyY = nil, nil
     local pressed = nil
     if (clickX > xBuff) and (clickX < (xBuff + 4)) and (clickY > yBuff) and (clickY < (yBuff + 4)) then
